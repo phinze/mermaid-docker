@@ -1,6 +1,6 @@
 FROM node:latest
 
-RUN npm install -g mermaid phantomjs && npm cache clean
+RUN npm install -g mermaid phantomjs-prebuilt --unsafe-perm && npm cache clean --force
 
 WORKDIR /data
 
